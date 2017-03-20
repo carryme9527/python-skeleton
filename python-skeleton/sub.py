@@ -7,6 +7,8 @@ filename = argv[1]
 author = argv[2]
 name = argv[3]
 
+current = path.dirname(path.realpath(__file__))
+template_path = path.join(current, template_path)
 filein = open(path.join(template_path, filename))
 src = Template(filein.read())
 result = src.substitute(get_config(author, name))
