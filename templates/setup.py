@@ -3,17 +3,13 @@ try:
 except ImportError:
     from distutils.core import setup
 
-config = {
-    'description': '$PROJ_DESC',
-    'author': '$AUTHOR_NAME',
-    'url': '$PROJ_URL',
-    'download_url': '$PROJ_DOWNLOAD',
-    'author_email': '$AUTHOR_EMAIL',
-    'version': '0.0.1',
-    'install_requires': ['nose'],
-    'packages': ['$PROJ_NAME'],
-    'scripts': [],
-    'name': '$PROJ_NAME'
-}
-
-setup(**config)
+setup(
+    name='$PROJ_NAME',
+    version='0.0.1',
+    url='$PROJ_URL',
+    license='BSD',
+    author='$AUTHOR_NAME',
+    author_email='$AUTHOR_EMAIL',
+    description='$PROJ_DESC',
+    packages=['$PROJ_NAME'],
+)
