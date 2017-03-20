@@ -1,5 +1,5 @@
 from nose.tools import *
-import python-skeleton
+import python_skeleton
 
 def setup():
     print "SETUP!"
