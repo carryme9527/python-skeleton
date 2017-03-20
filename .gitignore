@@ -1,0 +1,9 @@
+settings.py
+
+# Python
+## Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# Vim
+## swap
+[._]*.sw[a-p]
